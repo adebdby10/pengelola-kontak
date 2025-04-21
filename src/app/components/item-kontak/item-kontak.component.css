@@ -1,0 +1,57 @@
+/* Styling untuk item kontak */
+.kontak-item {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+    width: 100%; /* Mengatur lebar kontainer agar sesuai dengan lebar induk */
+    max-width: 600px; /* Menambahkan batas maksimal untuk lebar agar tidak terlalu besar */
+    margin: 0 auto; /* Memusatkan box */
+  }
+  
+  /* Hover effect untuk item kontak */
+  .kontak-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling untuk nama kontak */
+  .kontak-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling untuk email kontak */
+  .kontak-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling untuk tombol hapus */
+  .kontak-item button {
+    align-self: flex-start;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect untuk tombol hapus */
+  .kontak-item button:hover {
+    background-color: #d32f2f;
+  }
+  

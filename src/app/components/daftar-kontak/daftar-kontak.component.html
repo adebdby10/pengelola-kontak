@@ -1,4 +1,9 @@
 <h2>Daftar Kontak</h2>
 <div *ngFor="let kontak of daftarKontak">
-  <app-item-kontak [kontak]="kontak" (hapus)="hapusKontak($event)"></app-item-kontak>
+  <!-- Validasi agar hanya kontak dengan id dan email yang ditampilkan -->
+  <app-item-kontak 
+    *ngIf="kontak.id && kontak.email" 
+    [kontak]="kontak" 
+    (hapus)="hapusKontak(kontak.id)">
+  </app-item-kontak>
 </div>
